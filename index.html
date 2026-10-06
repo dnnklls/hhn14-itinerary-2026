@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HHN14 — Thursday 29 October 2026</title>
+<meta name="description" content="Dinnie and Claire at Universal Studios Singapore Halloween Horror Nights 14, Thursday 29 October 2026." />
+<meta name="theme-color" content="#0b0b0f" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0b0b0f; --bg2:#15151c; --bg3:#1d1d26; --text:#f3f1ec; --text2:#9a98a3;
+    --accent:#ff6a2b; --accent2:#ffb38a; --red:#ff4d5e; --green:#4fd38a; --purple:#9b7bff;
+    --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.06); --radius:22px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:"SF Pro Text",-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;
+    background:var(--bg); color:var(--text);
+    font-size:17px; line-height:1.5; letter-spacing:-.012em; padding-bottom:70px;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  ::selection{background:rgba(255,106,43,.3)}
+  a{color:var(--accent);text-decoration:none}
+  b{font-weight:600;color:var(--text)}
+  .wrap{max-width:740px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)}
+
+  nav{position:sticky;top:0;z-index:50;height:52px;
+    background:rgba(11,11,15,.72);backdrop-filter:saturate(180%) blur(20px);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+  nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+  nav .brand{font-weight:600;font-size:15px;letter-spacing:-.02em}
+  nav .links{display:flex;gap:18px}
+  nav .links a{color:var(--text);font-size:13px;opacity:.8}
+  nav .links a:hover{opacity:1;color:var(--accent)}
+  @media(max-width:520px){nav .links a:nth-child(1){display:none}}
+
+  header.hero{padding:84px 0 44px;position:relative;overflow:hidden}
+  header.hero::before{content:"";position:absolute;inset:-40% -20% auto -20%;height:70%;
+    background:radial-gradient(ellipse at 30% 30%,rgba(255,106,43,.22),transparent 55%),
+               radial-gradient(ellipse at 80% 20%,rgba(155,123,255,.16),transparent 50%);
+    pointer-events:none}
+  @media(max-width:520px){header.hero{padding:56px 0 36px}}
+  .hero .wrap{position:relative}
+  .hero h1{font-size:clamp(50px,12vw,88px);font-weight:700;letter-spacing:-.035em;line-height:1;margin:14px 0 0}
+  .hero h1 span{color:var(--accent)}
+  .hero .lede{font-size:clamp(19px,3vw,25px);color:var(--text2);letter-spacing:-.02em;line-height:1.32;margin-top:18px;max-width:32ch}
+  .specs{margin-top:32px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden}
+  @media(max-width:560px){.specs{grid-template-columns:repeat(2,1fr)}}
+  .specs .s{padding:18px 18px 16px;border-right:1px solid var(--line2);border-bottom:1px solid var(--line2)}
+  .specs .s:nth-child(3n){border-right:none}
+  @media(max-width:560px){.specs .s:nth-child(3n){border-right:1px solid var(--line2)}.specs .s:nth-child(2n){border-right:none}}
+  .specs .k{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--text2)}
+  .specs .v{font-size:17px;font-weight:600;margin-top:4px;letter-spacing:-.02em}
+  .specs .v small{display:block;font-size:13px;font-weight:400;color:var(--text2);margin-top:2px;letter-spacing:0}
+
+  section{padding:44px 0 8px}
+  .shead{margin-bottom:22px}
+  .shead h2{font-size:clamp(28px,5vw,38px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-top:8px}
+  .shead p{color:var(--text2);margin-top:8px;font-size:17px;max-width:48ch}
+
+  .panel{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .panel .ph{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .panel .ph svg{width:20px;height:20px;color:var(--accent)}
+  .panel .ph .t{font-weight:600;font-size:15px}
+  .dl{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid var(--line2)}
+  .dl .k{color:var(--text2);font-size:15px}
+  .dl .v{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .dl .v.red{color:var(--red)}
+  .dl .v.green{color:var(--green)}
+  .panel .foot{margin-top:12px;font-size:13px;color:var(--text2);line-height:1.45}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:620px){.grid2{grid-template-columns:1fr}}
+
+  .buy{background:linear-gradient(135deg,rgba(255,106,43,.14),rgba(155,123,255,.1));border:1px solid rgba(255,106,43,.35)}
+  .buy .total{display:flex;justify-content:space-between;align-items:baseline;padding-top:12px;margin-top:4px;border-top:1px solid var(--line)}
+  .buy .total .v{font-size:24px;font-weight:700;letter-spacing:-.03em}
+
+  .timeline{border-top:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line2)}
+  @media(max-width:420px){.row{grid-template-columns:70px 1fr;gap:12px}}
+  .row .tm{font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--accent2)}
+  .row .tm small{display:block;font-size:12px;font-weight:500;color:var(--text2);margin-top:2px}
+  .row .tx .h{font-weight:600;letter-spacing:-.015em}
+  .row .tx .d{color:var(--text2);font-size:15px;margin-top:3px;line-height:1.45}
+  .row.hi .tm{color:var(--red)}
+  .row .who{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .who.d{background:rgba(79,211,138,.14);color:var(--green)}
+  .who.c{background:rgba(155,123,255,.16);color:var(--purple)}
+  .who.b{background:rgba(255,106,43,.16);color:var(--accent)}
+
+  .houses{display:grid;gap:12px;counter-reset:h}
+  .house{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;display:grid;grid-template-columns:34px 1fr;gap:14px}
+  .house .n{width:34px;height:34px;border-radius:10px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+  .house h3{font-size:18px;font-weight:600;letter-spacing:-.02em;line-height:1.25}
+  .house p{color:var(--text2);font-size:15px;margin-top:5px;line-height:1.45}
+  .house .meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:13px;color:var(--text2)}
+  .house .meta b{color:var(--accent2)}
+
+  .cards{display:grid;gap:12px}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:18px}
+  .card h3{font-size:18px;font-weight:600;letter-spacing:-.02em}
+  .card p{color:var(--text2);font-size:15px;margin-top:6px;line-height:1.45}
+  .tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bg3);color:var(--accent2);margin-left:8px;vertical-align:middle;letter-spacing:0}
+
+  .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border-radius:999px;background:var(--accent);color:#0b0b0f;font-size:14px;font-weight:600;border:none;cursor:pointer;font-family:inherit}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn:active{transform:scale(.98)}
+
+  .list{list-style:none}
+  .list li{padding:12px 0;border-top:1px solid var(--line2);display:flex;gap:12px;color:var(--text2);font-size:15px;line-height:1.45}
+  .list li::before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
+  .list li b{color:var(--text)}
+
+  footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);color:var(--text2);font-size:13px;line-height:1.6}
+  footer a{color:var(--text2);text-decoration:underline;text-underline-offset:3px}
+
+  .fade{opacity:0;transform:translateY(10px);animation:fade .7s cubic-bezier(.2,.7,.2,1) forwards}
+  .d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.26s}
+  @keyframes fade{to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">HHN14 · 29 Oct</span>
+    <span class="links">
+      <a href="#tickets">Tickets</a>
+      <a href="#night">The night</a>
+      <a href="#houses">Houses</a>
+      <a href="#rest">Rest</a>
+    </span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow fade">Universal Studios Singapore · Thursday 29 October 2026</div>
+    <h1 class="fade d1">Halloween<br>Horror <span>Nights.</span></h1>
+    <p class="lede fade d2">Dinnie and Claire. Express PLUS, four houses, two scare zones, home with eight hours of sleep each.</p>
+
+    <div class="specs fade d3">
+      <div class="s"><div class="k">Event</div><div class="v">7:30pm – 12:30am<small>Gates from ~7pm</small></div></div>
+      <div class="s"><div class="k">Meet</div><div class="v">6:45pm<small>USS entrance, RWS</small></div></div>
+      <div class="s"><div class="k">Pass</div><div class="v">Express PLUS<small>One skip per house and ride</small></div></div>
+      <div class="s"><div class="k">Night type</div><div class="v">Peak<small>Expect a full park</small></div></div>
+      <div class="s"><div class="k">Getting there</div><div class="v">Grab to RWS<small>or HarbourFront → Sentosa Express</small></div></div>
+      <div class="s"><div class="k">Next day</div><div class="v">Both clear<small>Dinnie STBY from 12:01pm</small></div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="tickets" style="padding-top:12px">
+    <div class="shead">
+      <div class="eyebrow">Tickets</div>
+      <h2>What to buy.</h2>
+      <p>Everything from Klook or the RWS site. Express PLUS is dynamically priced and goes up as it sells, so buy early.</p>
+    </div>
+    <div class="grid2">
+      <div class="panel buy">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M12 6v12" stroke-dasharray="2 3"/></svg>
+          <span class="t">Per person</span>
+        </div>
+        <div class="dl"><span class="k">HHN14 admission, peak, dated 29 Oct</span><span class="v">S$78</span></div>
+        <div class="dl"><span class="k">Express PLUS Pass, dated 29 Oct</span><span class="v">from S$139</span></div>
+        <div class="total"><span class="k">Two of us</span><span class="v">≈ S$434</span></div>
+        <div class="btns">
+          <a class="btn" href="https://www.klook.com/activity/5877-universal-studios-singapore-halloween-horror-nights-ticket/" target="_blank" rel="noopener">Klook</a>
+          <a class="btn ghost" href="https://www.rwsentosa.com/en/play/universal-studios-singapore/halloween-horror-nights-14" target="_blank" rel="noopener">RWS official</a>
+        </div>
+        <p class="foot">On RWS you must add admission to the cart before Express shows up. On Klook the Express pass can be bought on its own. Mastercard on RWS takes S$5 off admission.</p>
+      </div>
+      <div class="panel">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3 4.7-5"/></svg>
+          <span class="t">How Express PLUS works</span>
+        </div>
+        <ul class="list">
+          <li><b>One skip at each haunted house.</b> Four houses, four skips. Use them in the first two hours.</li>
+          <li><b>One skip at each participating ride.</b> Mummy, Battlestar, Transformers and the rest.</li>
+          <li><b>Dated to 29 Oct.</b> Not transferable to another night.</li>
+          <li><b>Admission sold separately.</b> You need both QR codes on your phone at the gate.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="night">
+    <div class="shead">
+      <div class="eyebrow">Thursday 29 October</div>
+      <h2>The night, hour by hour.</h2>
+      <p>Houses first while everyone is still at the Scaremony, zones and rides after. Out at close.</p>
+    </div>
+    <div class="timeline">
+      <div class="row"><div class="tm">11:45<small>am</small></div><div class="tx"><div class="h">Claire lands <span class="who c">Claire</span></div><div class="d">SQ248 from Melbourne. Home, eat, sleep till 5. Seven hours before we meet.</div></div></div>
+      <div class="row"><div class="tm">Day</div><div class="tx"><div class="h">Dinnie rests <span class="who d">Dinnie</span></div><div class="d">Back from Beijing the night before. Nothing before 5pm.</div></div></div>
+      <div class="row"><div class="tm">5:45<small>pm</small></div><div class="tx"><div class="h">Early dinner <span class="who b">Both</span></div><div class="d">VivoCity or RWS. Keep it light, it's a lot of walking and the houses hit harder on a full stomach.</div></div></div>
+      <div class="row"><div class="tm">6:45<small>pm</small></div><div class="tx"><div class="h">At USS entrance</div><div class="d">Grab straight to Resorts World Sentosa, or HarbourFront MRT then Sentosa Express to Resorts World station. Both e-tickets and Express QR codes open on your phones.</div></div></div>
+      <div class="row"><div class="tm">7:00<small>pm</small></div><div class="tx"><div class="h">Gates open</div><div class="d">Get in, head to the Lagoon stage, grab a spot.</div></div></div>
+      <div class="row hi"><div class="tm">7:30<small>pm</small></div><div class="tx"><div class="h">Opening Scaremony</div><div class="d">Streamers break into the wrong warehouse. What they unleash spills into the park for the night. Watch it, then move fast.</div></div></div>
+      <div class="row hi"><div class="tm">8:00<small>pm</small></div><div class="tx"><div class="h">Houses, back to back</div><div class="d">Express PLUS skip at each. Order below. Done by about 10:15.</div></div></div>
+      <div class="row"><div class="tm">10:15<small>pm</small></div><div class="tx"><div class="h">The RAVEyard</div><div class="d">New York zone. Neon graveyard rave. Catch <b>Nail the Beat</b> here with HamiKuma and Ponti-Ana.</div></div></div>
+      <div class="row"><div class="tm">10:45<small>pm</small></div><div class="tx"><div class="h">Necropolis: The Serpent's Crossroads</div><div class="d">Ancient Egypt. Sasu Soul Eater's turf. Watch the walls.</div></div></div>
+      <div class="row"><div class="tm">11:00<small>pm</small></div><div class="tx"><div class="h">Rides</div><div class="d">Remaining Express PLUS skips: Revenge of the Mummy, Battlestar Galactica, Transformers. <b>Club PanDEMONium</b> at Pantages if you want to sit down.</div></div></div>
+      <div class="row"><div class="tm">11:45<small>pm</small></div><div class="tx"><div class="h">Merch, food, one repeat</div><div class="d">House queues drop after 11. A second run of a favourite in the regular line is possible.</div></div></div>
+      <div class="row"><div class="tm">12:30<small>am</small></div><div class="tx"><div class="h">Close</div><div class="d">Grab home. In bed by 1:30.</div></div></div>
+    </div>
+  </section>
+
+  <section id="houses">
+    <div class="shead">
+      <div class="eyebrow">Haunted houses</div>
+      <h2>Four houses, this order.</h2>
+      <p>Headliner first while its queue is still short, then sweep the rest.</p>
+    </div>
+    <div class="houses">
+      <div class="house"><div class="n">1</div><div>
+        <h3>Karang Guni: The Cursed Collection</h3>
+        <p>Singapore's rag-and-bone man, cursed by a lifetime of other people's junk. His shophouse is the headliner this year and will have the longest line later.</p>
+        <div class="meta"><span><b>8:00pm</b></span><span>Express skip</span></div>
+      </div></div>
+      <div class="house"><div class="n">2</div><div>
+        <h3>Singapore's Most Haunted: ON AIR</h3>
+        <p>Season 3. An abandoned TV and radio studio broadcasting the nation's darkest urban legends on a loop you can't leave.</p>
+        <div class="meta"><span><b>8:35pm</b></span><span>Express skip</span></div>
+      </div></div>
+      <div class="house"><div class="n">3</div><div>
+        <h3>Made in Hell: XL Robotics</h3>
+        <p>A facility harvesting human lifeforce for artificial life, mid-attack. Rebels, rogue machines, and a procedure that needs fresh flesh.</p>
+        <div class="meta"><span><b>9:10pm</b></span><span>Express skip</span></div>
+      </div></div>
+      <div class="house"><div class="n">4</div><div>
+        <h3>Chatterbox Charlie's Vaudeville Horrors</h3>
+        <p>Last year's FEARground ventriloquist gets his own house. Charlie and dummy Junior turn victims into versions of themselves. Your screams are part of the show.</p>
+        <div class="meta"><span><b>9:45pm</b></span><span>Express skip</span></div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="rest">
+    <div class="shead">
+      <div class="eyebrow">Rest check</div>
+      <h2>Why this night.</h2>
+      <p>Every other weekday HHN night either clashes with a flight or breaks the eight-hour rest rule for one of us.</p>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg>
+          <span class="t">Dinnie</span>
+        </div>
+        <div class="dl"><span class="k">Wed 28 · SQ811 PKX→SIN lands</span><span class="v">3:50pm</span></div>
+        <div class="dl"><span class="k">Thu 29</span><span class="v green">Free</span></div>
+        <div class="dl"><span class="k">Fri 30 · Standby at base</span><span class="v">12:01pm</span></div>
+        <div class="dl"><span class="k">Sleep window</span><span class="v">1:30 – 9:30+</span></div>
+      </div>
+      <div class="panel">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg>
+          <span class="t">Claire</span>
+        </div>
+        <div class="dl"><span class="k">Thu 29 · SQ248 MEL→SIN lands</span><span class="v">11:45am</span></div>
+        <div class="dl"><span class="k">Fri 30</span><span class="v green">Free</span></div>
+        <div class="dl"><span class="k">Sat 31 · SQ818 SIN→CKG departs</span><span class="v">8:20pm</span></div>
+        <div class="dl"><span class="k">Sleep window</span><span class="v">1:30 – whenever</span></div>
+        <p class="foot">Claire, if you're on standby on the 29th or 30th, say so and we move to a different night.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <div class="eyebrow">Good to know</div>
+      <h2>Small things.</h2>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>Costumes are allowed.<span class="tag">No full face masks</span></h3><p>Face paint only up to half the face. No props that look like weapons, no uniforms, nothing that could be mistaken for park cast.</p></div>
+      <div class="card"><h3>Roaming horror.</h3><p>The Karang Guni man stalks the pathways looking for new pieces for his collection. The Fatimah Rockers, a pontianak dance troupe, strike without warning outside The RAVEyard.</p></div>
+      <div class="card"><h3>Shoes you can walk in.</h3><p>Four houses, two zones, three rides and a lot of pavement between them. Wear trainers.</p></div>
+      <div class="card"><h3>Phones on low power.</h3><p>Tickets, Express passes and Grab home all live on your phone. Charge before you leave.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Prices and lineup from <a href="https://www.rwsentosa.com/en/play/universal-studios-singapore/halloween-horror-nights-14" target="_blank" rel="noopener">RWS</a>, <a href="https://dejiki.com/2026/07/uss-hhn14-guide-event-ticket-2026/" target="_blank" rel="noopener">Dejiki's HHN14 guide</a> and <a href="https://www.klook.com/blog/halloween-horror-nights-singapore-2026/" target="_blank" rel="noopener">Klook</a>, as of 6 October 2026. Express pricing is dynamic.
+  </footer>
+
+</main>
+</body>
+</html>
